@@ -1,0 +1,912 @@
+/*******colors**********
+#FBF5F3 - white
+#8DAA9D - green
+#D05353 - red
+#5C6784 - light blue
+#1D263B - dark blue
+
+background: rgb(0,255,246);
+background: linear-gradient(125deg, rgba(0,255,246,1) 0%, rgba(92,103,132,1) 0%, rgba(29,38,59,1) 100%);
+^^^^^^^^^gradient
+*****************/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 1.5em;
+  color: #FBF5F3;
+  font-weight: 300;
+}
+body{
+  display: grid;
+  height:100vh;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap:1em;
+  padding:1em;
+  box-sizing: border-box;
+  background-color:#FBF5F3;
+}
+
+
+section{
+  background-color:#8DAA9D;
+  color:#1D263B;
+  font-family: 'Montserrat', sans-serif;
+  padding:1em;
+  border-radius: 25px;
+  filter: drop-shadow(10px 10px 12px #666666);
+}
+
+button {
+  display: inline;
+  font-size: 1em;
+  color: pink;
+  background-color: #D05353;
+  border-radius: 20px;
+  border-style: none;
+  padding: .5em;
+  align-self: center;
+  justify-self: center;
+}
+
+
+/************icons**************/
+.icons {
+  grid-column: 1;
+  grid-row: 1 / span 8;
+  display: grid;
+  grid-template-columns: 1fr;  
+  grid-template-rows: repeat(9, 1fr);
+  background: rgb(0,255,246);
+  background: linear-gradient(125deg, rgba(0,255,246,1) 0%, rgba(141,170,157,1) 0%, rgba(60,131,99,1) 100%);
+}
+
+.icons i{
+  grid-column: 1;
+  grid-row: 1 / span 9;
+  font-size:2em;
+  text-align: center;
+  color: #FBF5F3;
+}
+
+/************icons**************/
+
+
+
+
+
+
+
+/*****currently******/
+
+.currently {
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 7;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:repeat(6, 1fr);
+  background: rgb(0,255,246);
+  background: linear-gradient(125deg, rgba(0,255,246,1) 0%, rgba(92,103,132,1) 0%, rgba(29,38,59,1) 100%);
+}
+
+
+.image {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    height: 15em;
+    width: 16em;
+    background-image: url(https://shop.abbathemuseum.com/app/uploads/2019/08/ABBA-The-Album-poster.jpg);
+    background-size: cover;
+    border-radius: 0%;
+}
+
+
+.currently p {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  align-item: center;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  color: #FBF5F3;
+}
+
+.backward {
+  grid-column: 1;
+  grid-row: 3;
+  font-size: 1em;
+  color: #FBF5F3;
+  justify-self: center;
+}
+
+.pause {
+  grid-column: 2;
+  grid-row: 3;
+  font-size: 1em;
+  color: #FBF5F3;
+  justify-self: center;
+}
+
+.play{
+  grid-column: 3;
+  grid-row: 3;
+  font-size: 1em;
+  color: #FBF5F3;
+  justify-self: center;
+}
+
+.forward {
+  grid-column:4;
+  grid-row: 3;
+  font-size: 1em;
+  color: #FBF5F3;
+  justify-self: center;
+}
+
+.currently h1{
+  display: inline;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  margin-left: 30px;
+  color: #FBF5F3;
+  font-size: 1em;
+}
+
+.currently button {
+  display: inline;
+  font-size: 1em;
+  grid-column: 3 / span 2;
+  margin-right: ;
+  grid-row: 4;
+  color: pink;
+  background-color: #D05353;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  padding: .5em;
+  border-style: none;
+}
+
+.currently ol {
+  grid-column: 1 / span 3;
+  grid-row: 5;
+  line-height:1.5rem;
+  font-size: 11px;
+  color: #D05353;
+  list-style: none;
+}
+
+
+
+.artistqueue{
+  color: #FBF5F3;
+  display: inline;
+  font-size: 9.5px;
+  font-weight: 300;
+}
+
+/*****currently******/
+
+
+/*****browse******/
+.browse {
+  grid-column: 2 / span 4;
+  grid row: 1;
+  display:inline;
+  background-color: #1D263B;
+  border-radius: 50px;
+}
+
+.browse h1 {
+  font-size: 1em;
+  color: #FBF5F3;
+  letter-spacing: .5em;
+}
+/*****browse******/
+
+
+/*****stats******/
+.stats {
+  grid-column: 1 / span 14;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  background-color: #D05353;
+}
+
+.songtitle {
+  display: table-cell;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.stats h1 {
+  font-weight: 600;
+}
+.UStitle h1 {
+  display: inline;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.UStitle img {
+  display: inline;
+  grid-column: 2;
+  grid-row: 1;
+  border-style: solid;
+}
+
+.worldtitle h1{
+  display: inline;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.badhabits img {
+  display: inline;
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.friendtitle h1{
+  display: inline;
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.montero img {
+  display: inline;
+  grid-column: 6;
+  grid-row: 1;
+}
+
+/*****stats******/
+
+
+
+
+
+/*****playlists******/
+.playlists {
+  grid-column: 6 / span 8;
+  grid-row:1 / span 8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-gap: 1em;
+  background: rgb(0,255,246);
+background: linear-gradient(125deg, rgba(0,255,246,1) 0%, rgba(141,170,157,1) 0%, rgba(60,131,99,1) 100%);
+}
+
+.playlists h1 {
+  display: inline;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.playlist1, .playlist2, .playlist3, .playlist4, .playlist5, .playlist6, .playlist7, .playlist8, .playlist9{
+  background-color: #00A7E1;
+  border-radius: 20px;
+  font-weight: 800;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+.playlist1, .playlist2, .playlist3, .playlist4, .playlist5, .playlist6, .playlist7, .playlist8, .playlist9 p {
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  place-items: center;
+}
+
+.playlist1, .playlist2, .playlist3, .playlist4, .playlist5, .playlist6, .playlist7, .playlist8, .playlist9 img {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.playlist1 {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  background-image: url("https://images.unsplash.com/photo-1588466585717-f8041aec7875?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+}
+
+.playlist2 {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  background-image:    
+  linear-gradient( rgba(255, 79, 25, 0.49), rgba(255, 189, 25, 0.26) ),
+ url("https://images.unsplash.com/photo-1610633706070-fec011042351?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1005&q=80");
+  background-size: cover;
+  max-width: 100%;
+  }
+
+.playlist3 {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+  background-image: url(https://images.unsplash.com/photo-1503435824048-a799a3a84bf7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  background-size: cover;
+  max-width: 100%;
+}
+
+.playlist4 {
+  grid-column: 1;
+  grid-row: 4 / span 2;
+  background-image: url(https://images.unsplash.com/photo-1530508777238-14544088c3ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  background-size: cover;
+}
+
+.playlist5 {
+  grid-column: 2;
+  grid-row: 4 / span 2;
+  background-image: url(https://images.unsplash.com/photo-1548266652-99cf27701ced?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=975&q=80);
+  background-size: cover;
+}
+
+.playlist6 {
+  grid-column: 3;
+  grid-row: 4 / span 2;
+  background-image: url(https://images.unsplash.com/photo-1512641406448-6574e777bec6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  background-size: cover;
+}
+
+.playlist7 {
+  grid-column: 1;
+  grid-row: 6 / span 2;
+  background-image: url(https://images.unsplash.com/photo-1530878902700-5ad4f9e4c318?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2834&q=80);
+  background-size: cover;
+}
+
+.playlist8 {
+  grid-column: 2;
+  grid-row: 6 / span 2;
+  background-image: url(https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2832&q=80);
+  background-size: cover;
+}
+
+.playlist9 {
+  grid-column: 3;
+  grid-row: 6 / span 2;
+  background-image: url(https://images.unsplash.com/photo-1616616839679-eec174e9d429?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80);
+  background-size: cover;
+}
+
+.playlist button {
+  grid-column: 3;
+  grid-row: 1;
+  display: inline;
+  font-size: 1em;
+  color: pink;
+  background-color: #D05353;
+  border-radius: 20px;
+  border-style: none;
+  padding: .5em;
+  align-self: center;
+  justify-self: center;
+}
+
+
+/*****playlists******/
+
+
+
+/*****social******/
+.social {
+  grid-column: 14;
+  grid-row: 1 / span 8;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9 1fr);
+  grid-gap: 1px;
+  background: rgb(0,255,246);
+  background: linear-gradient(125deg, rgba(0,255,246,1) 0%, rgba(92,103,132,1) 0%, rgba(29,38,59,1) 100%);
+}
+
+
+.social h1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  color:#FBF5F3 ;
+}
+
+.artist{
+  color: #FBF5F3;
+  display: table-cell;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+
+.evan, .abby, .troy, .parker, .alexa, .matt, .david, .grace {
+  font-size: 1em;
+  color:#FBF5F3;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.evansong, .abbysong, .troysong, .parkersong, .alexasong, .mattsong, .davidsong, .gracesong {
+  font-size: 12px;
+  color: #D05353;
+  font-weight: 500;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.evan {
+  grid-column: 1;
+  grid-row: 2;
+}
+.evansong {
+  grid-column: 2;
+  grid-row: 2;
+  align-items: center;
+}
+
+.abby{
+  grid-column: 1;
+  grid-row: 3;
+}
+.abbysong {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.troy {
+  grid-column: 1;
+  grid-row: 4;
+}
+.troysong {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.parker {
+  grid-column: 1;
+  grid-row: 5;
+}
+.parkersong {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.alexa {
+  grid-column: 1;
+  grid-row: 6;
+}
+.alexasong {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+
+.matt {
+  grid-column: 1;
+  grid-row: 7;
+}
+.mattsong {
+  grid-column: 2 / span 2;
+  grid-row: 7;
+}
+
+.david {
+  grid-column: 1;
+  grid-row: 8;
+}
+.davidsong {
+  grid-column: 2 / span 2;
+  grid-row: 8;
+}
+
+.grace {
+  grid-column: 1;
+  grid-row: 9;
+}
+.gracesong {
+  grid-column: 2 / span 2;
+  grid-row: 9;
+}
+
+/*****social******/
+
+/*************************************************
+ * ***********************************************
+ * ***********MOBILE*************************************************
+ * ***********************************************
+ * *********************************************/
+
+@media screen and (max-width: 600px){
+  * {
+    box-sizing: border-box;
+  }
+
+  body{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8 1fr);
+    margin-bottom: 50px;
+    }
+
+/***************************/
+
+.currently{
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.image {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    background-image: url(https://shop.abbathemuseum.com/app/uploads/2019/08/ABBA-The-Album-poster.jpg);
+    background-size: cover;
+    border-radius: 0%;
+    width: 26em;
+    height: 26em;
+}
+
+
+.currently p {
+  grid-column: 2 / span 2;
+  grid-row: 4;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  color: #FBF5F3;
+}
+
+.backward {
+  grid-column: 1;
+  grid-row: 5;
+  font-size: 1em;
+  color: #FBF5F3;
+  justify-self: center;
+}
+
+.pause {
+  grid-column: 2;
+  grid-row: 5;
+  font-size: 1em;
+  color: #FBF5F3;
+  justify-self: center;
+}
+
+.play{
+  grid-column: 3;
+  grid-row: 5;
+  font-size: 1em;
+  color: #FBF5F3;
+  justify-self: center;
+}
+
+.forward {
+  grid-column:4;
+  grid-row: 5;
+  font-size: 1em;
+  color: #FBF5F3;
+  justify-self: center;
+}
+
+
+
+.currently h1{
+  display: inline;
+  grid-column: 1 / span 2;
+  grid-row: 6;
+  color: #FBF5F3;
+  justify-self: center;
+  align-self: center;
+}
+
+
+.currently button {
+  display: inline;
+  font-size: 1em;
+  grid-column: 3;
+  grid-row: 6;
+  color: pink;
+  background-color: #D05353;
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  padding: .5em;
+  border-style: none;
+}
+
+.currently ol {
+  grid-column: 1 / span 3;
+  grid-row: 7;
+  justify-self: center;
+  line-height:1.5rem;
+  color: #D05353;
+}
+
+
+.artistqueue{
+  color: #FBF5F3;
+  display: inline;
+  font-size: 11px;
+  font-weight: 300;
+}
+/**********************************/
+
+.icons {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);  
+  grid-template-rows: 1fr;
+  grid-gap: 1px;
+}
+
+.icons i {
+  grid-column: 1 / span 9;
+  grid-row: 3;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+/***************************/
+
+.browse{
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+/***************************/
+
+.playlists {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.playlists h1 {
+  grid-column: 1;
+  grid-row: 1;
+  display: inline;
+}
+
+.playlists button {
+  grid-column: 3;
+  grid-row: 1;
+  display: inline;
+}
+.playlist1{
+  grid-column: 1;
+  grid-row: 2;
+  width: 7em;
+}
+
+.playlist2{
+  grid-column: 2;
+  grid-row: 2;
+  width: 7em;
+}
+
+.playlist3{
+  grid-column: 3;
+  grid-row: 2;  
+  width: 7em;
+}
+
+.playlist4{
+  grid-column: 1;
+  grid-row: 3;
+  width: 7em;
+}
+
+.playlist5{
+  grid-column: 2;
+  grid-row: 3;
+  width: 7em;
+}
+
+.playlist6{
+  grid-column: 3;
+  grid-row: 3;
+  width: 7em;
+}
+
+.playlist7 {
+  grid-column: 1;
+  grid-row: 4;
+  width: 7em;
+}
+
+.playlist9 {
+  grid-column: 2;
+  grid-row: 4;
+  width: 7em;
+}
+
+.playlist8 {
+  grid-column: 3;
+  grid-row: 4;
+  width: 7em;
+}
+
+/*******************************/
+
+.stats {
+  grid-column: 1 / span 3;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  background-color: #D05353;
+}
+
+.songtitle {
+  display: table-cell;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.stats h1 {
+  font-weight: 600;
+}
+.UStitle h1 {
+  display: inline;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.worldtitle h1{
+  display: inline;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.friendtitle h1{
+  display: inline;
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.montero img {
+  display: inline;
+  grid-column: 6;
+  grid-row: 1;
+}
+
+/*******************************/
+
+.social {
+  grid-column: 1 / span 3;
+  grid-row: 6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9 1fr);
+  grid-gap: 1px;
+  background-color: #1D263B;
+}
+
+
+.social h1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  color:#FBF5F3;
+  margin-left: 50px;
+
+}
+
+.artist{
+  color: #FBF5F3;
+  display: inline;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+
+.evan, .abby, .troy, .parker, .alexa, .matt, .david, .grace {
+  font-size: 1em;
+  color:#FBF5F3;
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 50px;
+
+}
+
+.evansong, .abbysong, .troysong, .parkersong, .alexasong, .mattsong, .davidsong, .gracesong {
+  font-size: 12px;
+  color: #D05353;
+  font-weight: 500;
+  text-align: left;
+  margin-right: 50px;
+}
+
+.evan {
+  grid-column: 1;
+  grid-row: 2;
+}
+.evansong {
+  grid-column: 2;
+  grid-row: 2;
+  align-items: center;
+}
+
+.abby{
+  grid-column: 1;
+  grid-row: 3;
+}
+.abbysong {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.troy {
+  grid-column: 1;
+  grid-row: 4;
+}
+.troysong {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.parker {
+  grid-column: 1;
+  grid-row: 5;
+}
+.parkersong {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.alexa {
+  grid-column: 1;
+  grid-row: 6;
+}
+.alexasong {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+
+.matt {
+  grid-column: 1;
+  grid-row: 7;
+}
+.mattsong {
+  grid-column: 2 / span 2;
+  grid-row: 7;
+}
+
+.david {
+  grid-column: 1;
+  grid-row: 8;
+}
+.davidsong {
+  grid-column: 2 / span 2;
+  grid-row: 8;
+}
+
+.grace {
+  grid-column: 1;
+  grid-row: 9;
+}
+.gracesong {
+  grid-column: 2 / span 2;
+  grid-row: 9;
+}
+
+/*******************************/
+
+}
+
+
+
+@media screen and (min-width: 40em){
+  section{
+    margin-bottom: 0rem;}
+}
